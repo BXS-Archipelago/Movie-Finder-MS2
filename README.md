@@ -63,6 +63,8 @@ Git : Dynamic version control and taking a snapshot of regular updates.
 
 GitPod: The platform where the site is created and hosted during the build stages. 
 
+Balsamiq Wireframes Version 4.1.9  used to create mock-up version of the site. 
+
 Visual Studio Code : a comprehensive code editor, it was used here for offline bug-testing and dummy-runs of the API in operation to avoid any additional clutter in the GitPod and Github environment. 
 
 Unsplash.com : the kindly provider of our single image used in this website. 
@@ -74,5 +76,8 @@ Font Awesome : Icons were used in the Wishlist page.
 
 # TESTING
 
+Continuous testing will be logged in this section: 
 
-Bug - Dropdown menu from burger icon when screen is less than 993px requires two clicks.  
+First Bug found - Dropdown menu from burger icon when screen is less than 993px requires two clicks.  
+
+Feasibilty test complete: Index.html page and CSS created and designed according to Wireframe Mockup. Wireframe file MOVIE FINDERS MS2 WF.pdf uploaded. 

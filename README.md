@@ -75,4 +75,4 @@ Font Awesome : Icons were used in the Wishlist page.
 # TESTING
 
 
-
+Bug - Dropdown menu from burger icon when screen is less than 993px requires two clicks.  

@@ -74,3 +74,33 @@ header {
 .nav-links2 {
     display: none;
 }
+
+/*-----Footer Area ---*/
+
+.base {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    background-color: #393939;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.base li {
+    list-style: none;
+    padding: 20px 20px;
+    display: inline-block;
+    
+}
+
+.base li a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5em;
+    color: #fff;
+   }

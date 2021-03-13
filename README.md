@@ -161,5 +161,8 @@ Using the search term "JAWS" as the movie, Console.log(data) for the object give
 
      This page will have two buttons to return the top trending 250 Movies or the top 250 TV shows. 
 
-     I have now reduced this to the top 50 so as not to overpower the visitors resources with images and data, and to speed up the search. 
+     I have now reduced this to the top 50 so as not to overpower the visitors resources with images and data, and to speed up the search. This was achieved using .slice() function
 
+     Top 50 movies javascript is less involved than the search function. In testing it, all that is required is to send the request for the highest rated movies and display the objects returned from IMDB by rank. And the identical step for the Top TV shows as well.  
+
+    console.log(data) for movies and TV shows shows object/array are produced in groups of 0-99, 100-199, 200-250.  This caused some additional thought as I presumed I needed to further access the first array index as sub-index in this format.  It turned out the items list doesn't require any different method of access. 

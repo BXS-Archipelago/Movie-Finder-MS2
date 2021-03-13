@@ -38,3 +38,33 @@ $("#top-movies").click(()=> {
        })       
      
 )})  
+
+// this part will create the Top TV Shows list: 
+
+const btn2 = document.querySelector("#top-tv")
+
+$("#top-tv").click(()=> {
+   
+   
+      result.innerHTML = ""
+   fetch (`https://imdb-api.com/en/API/Top250TVs/${key}`)
+   .then(res => res.json()
+      .then(data => {
+      console.log(data)  
+      
+      const top250Array = data.items.slice(0, 50)
+      top250Array.forEach(tvshow => {
+            const div = document.createElement("div")
+            div.setAttribute("class", "result2")
+            div.setAttribute("id", `rank-${tvshow.rank}` )
+            div.innerHTML = `
+                  <img src = "${tvshow.image}">
+                  <h1>Rank: #${tvshow.rank}</h1>
+                  <h3>${tvshow.title}</h3>
+            `
+            document.querySelector(".result-container2").appendChild(div)
+            })
+
+      })       
+     
+)})  

@@ -78,6 +78,17 @@ Font Awesome : Icons were used in the Wishlist page.
 
 Continuous testing will be logged in this section: 
 
-First Bug found - Dropdown menu from burger icon when screen is less than 993px requires two clicks.  
+First Bug found - Dropdown menu from burger icon when screen is less than 993px requires two clicks.  Issue #2 - I had originally created a second mobile-only set of navigation list items which were display: none in desktop view.  I was using Javascript block to either change the opacity or display:Flex toggle  in the following block: 
+let showMenu = document.querySelector(".nav-links2")
+const barsFunction = () => {
+   if (showMenu.style.opacity === "0")
+   {
+      showMenu.style.opacity = "1"
+} else {
+     showMenu.style.opacity = "0"
+}
+}
+
+However, the - nav-links2 a - is still clickable on the mobile pages when the drop down menu is not in use, thus making large clickable areas in my screen. Very frustrating, and I'm sure there is a way around it but I have instead reverted back to my CSS-only responsive menu, which is far more attractive anyway. Due to the unforeseen bug, this change will be updated in the mock-ups. 
 
 Feasibilty test complete: Index.html page and CSS created and designed according to Wireframe Mockup. Wireframe file MOVIE FINDERS MS2 WF.pdf uploaded. 

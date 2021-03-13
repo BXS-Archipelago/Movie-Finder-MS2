@@ -13,39 +13,43 @@
 
     </head>
     <body>
-        <header>
+         <input id="nav" type="checkbox" class="hidden" />
+              <label for="nav" class="nav-btn">
+      
+                  <!--3 Bars for Burger Box-->
+      
+                <i></i>
+                <i></i>
+                <i></i>
+              </label>
 
-            <!-- 
-    Header for desktop view navigation
-            -->
 
-            <div class="desktop">
-                <h1 class="logo">MOVIE FINDER</h1>
-                <div class="nav-links">
-                    <a href="index.html">Search</a>
-                    <a href="top.html">Top 250</a>
-                    <a href="watchlist.html">Watch List</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-        
-            <!-- 
-The div with classname "mobile" will operate when screensize is less than 993px and offer a hamburger icon for the dropdown menu.
-            -->
+        <div class="nav-container">
+                        
+      
+      <!--Logo as text only-->
+      
+              <div class="logo-base">
+                                
+                <span class="logo-title-strong">Movie Finder</span>
+               
+              </div>
+      
+      <!---Navigation Links-->
+      
+              <div class="nav-wrapper">
+                <ul>
+                  <li><a href="index.html">Search</a></li>
+                  <li><a href="Top.html">Top 50</a></li>
+                  <li><a href="about.html">Wishlist</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+           
+          </div>
+      
 
-    
-
-            <div class="mobile">
-                <span onclick="barsFunction()"><i class="fas fa-bars"></i></span>
-                <div class="nav-links2">
-                    <a href="index.html">Search</a>
-                    <a href="top.html">Top 250</a>
-                    <a href="watchlist.html">Watch List</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-        </header> 
-
+       
             <!-- 
     Section to contain the background image (banner) with framing "search" div to house jumbotron, h3, input and search-button 
             -->

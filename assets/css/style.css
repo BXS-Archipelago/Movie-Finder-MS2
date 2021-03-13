@@ -512,3 +512,13 @@ button:hover {
     border-radius: 5px;
     transition: 0.4s ease-in-out;
 }
+
+
+.result .btn-imdb:hover {
+    background-color: #6D6F5B;
+}
+
+.result .btn-imdb a {
+    color: white;
+    padding: 5px 10px;
+}

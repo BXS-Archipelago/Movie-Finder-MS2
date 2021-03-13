@@ -52,21 +52,20 @@
 
        
             <!-- 
-    Section to contain the background image (banner) with framing "search" div to house jumbotron, h3, input and search-button 
+    Section to contain the background image (banner) with framing "search" div to house jumbotron, h3, and two search buttons to render Top 50 either Movies or TV Shows
             -->
                
         
         <section class= "banner">
             <div class="search">         
 
-                <div class="searchBar jumbotron">
-                    <h3>Search IMDb </h3>
-                    <input id = "searchMovies" type="text" placeholder="Search by title">
-                   
-                    
-                    <div class="submit">
-                        <button>Search</button>
-                    </div>
+                <div class="searchBar2 jumbotron">
+                     <h3>Trending now on IMDb </h3> 
+                        <div class="btn-holder">                     
+                            <button id = "top-movies">Top 50 Movies</button>
+                            <button id = "top-tv">Top 50 TV Shows</button>
+                        </div> 
+                  
                 </div>
             </div>
     
@@ -105,6 +104,6 @@
             </ul>
         </footer>
 
-     <script src="assets/js/top.js" defer></script>
+     <script src="assets/js/main.js" defer></script>
     </body>
 </html>

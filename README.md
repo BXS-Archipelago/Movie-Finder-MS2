@@ -73,6 +73,21 @@ Compressjpeg.com:  an online tool used to compress the image to a more workable 
 
 Font Awesome : Icons were used in the Wishlist page. 
 
+# Styling & Design : 
+    There is only a single image on the site, noted in the final credits. It is of a vintage Cinema projector with very little colour in it. The effect rendered is almost Sepia but not quite. 
+
+    There are two primary colours used in the website: White & Black for text and background in some areas.  One secondary colour is used in the input bars, Orange. 
+
+    The main colour scheme is adopted from the single jpeg used in the site. They are mostly warm tan, cream and grey colours extracted using the Chrome Colour Picker extension and added in to the CSS to give a vintage feel to the site.
+
+    The colours specified are as follows: 
+        Body background: #E5E5E5 - soft grey
+        Logo & Footer area, alternating search result BG : #393939 - dark grey .
+        Navigation links : #B56B50 - earthenware brown
+        Jumbotron & Buttons: #6D6F5B -  soft mid-tone green
+        Button-Hover & search result text: #CECBC2 - a light cream-grey shade
+        Search result alternating background : #49473B - dark grey-green shade
+
 
 # TESTING
 

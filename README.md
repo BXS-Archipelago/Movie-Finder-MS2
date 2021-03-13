@@ -107,3 +107,55 @@ const barsFunction = () => {
 However, the - nav-links2 a - is still clickable on the mobile pages when the drop down menu is not in use, thus making large clickable areas in my screen. Very frustrating, and I'm sure there is a way around it but I have instead reverted back to my CSS-only responsive menu, which is far more attractive anyway. Due to the unforeseen bug, this change will be updated in the mock-ups. 
 
 Feasibilty test complete: Index.html page and CSS created and designed according to Wireframe Mockup. Wireframe file MOVIE FINDERS MS2 WF.pdf uploaded. 
+
+
+IMDB account set up and the key for the API permission has been received : "k_x3bnm044"
+
+IMDB uses the following object style to output the data: 
+{
+  "searchType": "string",
+  "expression": "string",
+  "results": [
+    {
+      "id": "string",
+      "resultType": "string",
+      "image": "string",
+      "title": "string",
+      "description": "string"
+    }
+  ],
+  "errorMessage": "string"
+}
+
+Using the search term "JAWS" as the movie, Console.log(data) for the object gives the following output and array: 
+"searchType": "Movie",
+  "expression": "jaws",
+  "results": [
+    {
+      "id": "tt0073195",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_Ratio0.7273_AL_.jpg",
+      "title": "Jaws",
+      "description": "(1975)"
+    },
+
+
+    The search objective for this site is to retrieve the following: 
+        - image
+        - title
+        - description
+        - id 
+
+    The click event of the search button means this data will be fetched with the json function. A forEach loop will iterate each value to the innerHTML of the div that will automatically create within the "results-container" div stored in the index.html page.  
+
+    Using variable let title = jaws
+    First attempts unsuccessful as the empty array was mistakenly to "results.data" as per the format in the json object.  The fix is obvious now, it has been changed to "data.results" (with a cup of tea and biscuits to keep sane!!)
+
+    Succesful API connection. 
+    
+    The initial test offers to the console {searchType: "Movie", expression: "jaws", results: Array(8), errorMessage: ""}
+
+    The search results display in the lower part of the screen but need a lot of CSS styling to properly see the movies as information to browse. 
+
+    
+

@@ -157,5 +157,9 @@ Using the search term "JAWS" as the movie, Console.log(data) for the object give
 
     The search results display in the lower part of the screen but need a lot of CSS styling to properly see the movies as information to browse. 
 
-    
+     - top.html 
+
+     This page will have two buttons to return the top trending 250 Movies or the top 250 TV shows. 
+
+     I have now reduced this to the top 50 so as not to overpower the visitors resources with images and data, and to speed up the search. 
 

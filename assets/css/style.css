@@ -9,7 +9,7 @@
 body {
     font-family: "Righteous", sans-serif;
     letter-spacing: 2px;
-    background-color:#E5E5E5;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -280,6 +280,77 @@ body {
     justify-content: center;
     }
 
+/*----------------------------contact-Form--*/
+    
+.contact-form {
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.center-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    margin: 0 auto;
+    height: 40vh;
+    width: 70%;
+}
+
+button[type="submit"] {
+   width: 10vw;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #B56B50;
+    color: #d0cdc6;
+}
+
+.form-control {
+    width: 60vw;
+    height: 55px;
+    margin: 10px 0;
+    font-size: 14px;
+    font-family: "Righteous";
+    letter-spacing: 1px;
+    padding: 4px;
+}
+
+.free-text {
+    width: 60vw;
+    height: 300px;
+    font-size: 14px;
+    font-family: "Righteous";
+    letter-spacing: 1px;
+    padding: 4px;
+}
+
+.btn-contact {
+    padding: 3px 10px;
+    width: 15%;
+}
+
+.contact_1 {
+    text-transform: uppercase;
+    color: #C8C9C3;
+    font-size: 4vh;
+    font-weight: 700;
+    text-shadow: 2px 5px 5px #7c432e;
+}
+
+.contact_2 {
+    text-transform: uppercase;
+    color: #C8C9C3;
+    font-size: 2vh;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px #7c432e;
+}
+
 
 
 /*-----Footer Area ---*/
@@ -401,7 +472,7 @@ body {
 
 .searchBar {
     height: 30vh;
-    width: 55vw;
+    width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-around;

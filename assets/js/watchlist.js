@@ -31,3 +31,15 @@ const listRendering = () => {
         ul.appendChild(li)
      })
 }
+
+function handleClick(e, item) {
+    e.parentNode.parentNode.style.display = "none"
+    movieList.splice(movieList.indexOf(item))
+}
+
+function handleTick(currentElement){
+   
+    currentElement.parentNode.previousElementSibling.style.textDecoration = (currentElement.parentNode.previousElementSibling.style.textDecoration === "line-through") ? ("none"):("line-through")
+    currentElement.firstElementChild.className = (currentElement.firstElementChild.className === "far fa-check-circle") ? ("fas fa-check-circle"):("far fa-check-circle")
+    
+}

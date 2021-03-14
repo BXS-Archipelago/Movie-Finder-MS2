@@ -166,3 +166,10 @@ Using the search term "JAWS" as the movie, Console.log(data) for the object give
      Top 50 movies javascript is less involved than the search function. In testing it, all that is required is to send the request for the highest rated movies and display the objects returned from IMDB by rank. And the identical step for the Top TV shows as well.  
 
     console.log(data) for movies and TV shows shows object/array are produced in groups of 0-99, 100-199, 200-250.  This caused some additional thought as I presumed I needed to further access the first array index as sub-index in this format.  It turned out the items list doesn't require any different method of access. 
+
+    Watchlist - Requirement : input field, save button, output required to have option to put a line-through for completed tasks and option to delete from list. 
+
+
+    Bug??!! For items created in the watchlist, I have a tick-complete icon and a delete icon. I am finding it very difficult to attach the click event so that each serves its purpose individually! 
+
+    Test : I included onclick events for both font-awesome icons in the elements as I couldn't target them using querySelector or getElementsbyId, etc. 

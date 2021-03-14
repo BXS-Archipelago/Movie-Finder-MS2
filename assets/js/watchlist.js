@@ -31,14 +31,17 @@ const listRendering = () => {
         ul.appendChild(li)
      })
 }
-
+// Function to delete lines of the Watchlist.  Onclick used in the Span with FA 
+// icon above!  Please review for suitability. 
 function handleClick(e, item) {
     e.parentNode.parentNode.style.display = "none"
     movieList.splice(movieList.indexOf(item))
 }
 
-function handleTick(currentElement){
-   
+//Function to toggle line-through for completed tasks. Onclick used in the span
+// here as well. 
+
+function handleTick(currentElement){   
     currentElement.parentNode.previousElementSibling.style.textDecoration = (currentElement.parentNode.previousElementSibling.style.textDecoration === "line-through") ? ("none"):("line-through")
     currentElement.firstElementChild.className = (currentElement.firstElementChild.className === "far fa-check-circle") ? ("fas fa-check-circle"):("far fa-check-circle")
     

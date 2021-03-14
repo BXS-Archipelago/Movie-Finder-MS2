@@ -170,8 +170,10 @@ Using the search term "JAWS" as the movie, Console.log(data) for the object give
     Watchlist - Requirement : input field, save button, output required to have option to put a line-through for completed tasks and option to delete from list. 
 
 
-    Bug??!! For items created in the watchlist, I have a tick-complete icon and a delete icon. I am finding it very difficult to attach the click event so that each serves its purpose individually! 
+    Watchlist Bug??!! For items created in the watchlist, I have a tick-complete icon and a delete icon. I am finding it very difficult to attach the click event so that each serves its purpose individually! 
 
-    Test : I included onclick events for both font-awesome icons in the elements as I couldn't target them using querySelector or getElementsbyId, etc.  Will need further tests and probably tutor support. I also need to save this to Local Storage in the browser!  (I will set the contact page first and return to this after due to lateness and brain-malfunction!)
-    
-     
+    Test : I included onclick events for both font-awesome icons in the elements as I couldn't target them using querySelector or getElementsbyId, etc.  Will need further tests and probably tutor support. I also need figure out how to save this to Local Storage in the browser!  (I will set the contact page first and return to this after due to lateness and brain-malfunction!)
+
+    Contact Form Testing : EmailJS service key and template number created and applied in local contact.js.  The online template test at EmailJS works fine and is sending to my inbox. However, several attempts from the gitpod site have not been succesful. All form data looks correct. 
+
+    Contact-Form Fix. Deleted the contents of the template and recreated it as per the form required. All working succesfully and emails from webpage received accordingly.

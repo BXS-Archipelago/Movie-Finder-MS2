@@ -172,4 +172,6 @@ Using the search term "JAWS" as the movie, Console.log(data) for the object give
 
     Bug??!! For items created in the watchlist, I have a tick-complete icon and a delete icon. I am finding it very difficult to attach the click event so that each serves its purpose individually! 
 
-    Test : I included onclick events for both font-awesome icons in the elements as I couldn't target them using querySelector or getElementsbyId, etc. 
+    Test : I included onclick events for both font-awesome icons in the elements as I couldn't target them using querySelector or getElementsbyId, etc.  Will need further tests and probably tutor support. I also need to save this to Local Storage in the browser!  (I will set the contact page first and return to this after due to lateness and brain-malfunction!)
+    
+     

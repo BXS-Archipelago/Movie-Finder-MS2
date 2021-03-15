@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+   
 }
 
 /* Logo and Navigation links */
@@ -81,7 +82,7 @@ nav {
 
 .nav-wrapper ul {
    display: flex;
-   flex-direction: row;
+   flex-direction:row;
    justify-content: space-around;
    align-items: center;
    margin: 0;
@@ -133,15 +134,19 @@ nav {
         font-size: 1.5rem;
 
     }
-    nav ul li{
-    padding: 12px 5px;
-    }
+        nav ul li{
+         padding: 12px 5px;
+   
+     }
 
-    nav ul li a {
+        nav ul li a {
         font-size: 35px;
     }
 
     .nav-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: fixed;
         top: 0;
         left: 0;
@@ -157,6 +162,9 @@ nav {
          position: absolute;
          top: 30%;
          transform: translateY(-50%);
+         flex-direction: column;          
+        align-items: center;
+        justify-content: center;
         }
   
 
@@ -168,6 +176,9 @@ nav {
         margin-bottom: 10px;
     }
 
+    .nav-wrapper ul li a {
+        text-align: center;
+    }
 /*-------------------------------------------------------------------------*/
 /*--------------------------------------------------------Drop-down Sequence*/
 
@@ -194,7 +205,7 @@ nav {
     .nav-wrapper ul li a {
         padding: 10px 22px;
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         letter-spacing: 1.2px;
         opacity: 0;
         transform: translateX(-20px);
@@ -556,7 +567,7 @@ button:hover {
     align-content: space-around;
     align-items: center;
     width: 80vw;
-    padding: 80px 0;
+    padding: 60px 0;
     background-color: #000;
 }
 
@@ -689,6 +700,13 @@ button:hover {
 
 
 
+.nav-wrapper ul li:not(:first-child){
+    margin-left: 0;
+    }
+.nav-wrapper ul li:last-child{
+    margin-right: 0;
+    }
+
 
 }
 
@@ -709,7 +727,7 @@ button:hover {
     }
 
    .searchBar h3 {
-       font-size: 1.5rem;
+       font-size: 1.2rem;
    }
 
    
@@ -792,4 +810,26 @@ button:hover {
     color: white;
     font-size: 0.8rem;
     }
-}
+
+    .nav-wrapper ul li a {
+        font-size: 1rem;
+    }
+
+    .btn-holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-holder button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        width: 90%;
+    }
+
+
+
+
+    }

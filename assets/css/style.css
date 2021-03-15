@@ -63,9 +63,12 @@ body {
     padding: 0 20px;
 }
 
-.nav {
+nav {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -469,75 +472,6 @@ button[type="submit"] {
 
 
 
-   /* ----  Mobile View CSS alterations ----*/
-
-   @media only screen and (max-width: 993px) {
-
-        .desktop .nav-links {
-            display: none;
-        }
-
-        .mobile {
-            display: flex;
-            flex-direction: column;
-            background-color:#393939;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .mobile span .fas{ 
-            display: flex;
-            padding: 10px;
-            font-size: 1.5rem;
-            color: #fff;
-            cursor: pointer;
-        
-        }
-
-        .mobile .fas:hover {
-            color: orange;     
-            transition-duration: 0.4s;
-        }
-
-        .mobile .nav-links2 {
-            display: flex;
-            flex-direction: column;
-            width: 100vw;
-            position: absolute;
-            right: 0vw;
-            top: 10vh;
-            background-color: black;
-            height: 90vh;
-            z-index: 10;
-            opacity: 0;
-            transition: all .5s ease-in-out;
-        }
-
-        .mobile .nav-links2 a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-transform:uppercase;
-            letter-spacing: 2px;
-            size: 1.5rem;
-            font-weight: 600;
-            background-color: #B56B50;
-            padding: 20px 30px;
-            margin-top: 20px;
-            text-decoration: none;
-
-        }
-
-        .logo {
-   
-            padding: 0px 25px;
-            font-size: 2vh;
-        }
-   }
-
-
-
    /*-------------Search page & Input box styling ----*/
 
    
@@ -748,4 +682,114 @@ button:hover {
 .result2 .btn-imdb a {
     color: white;
     padding: 5px 10px;
+}
+
+
+@media screen and (max-width: 993px) {
+
+
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .logo .logo-title-strong {
+        padding-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    .nav-container {
+        height: 10vh;
+    }
+
+    .submit button {
+        font-size: .6rem;
+    }
+
+   .searchBar h3 {
+       font-size: 1.5rem;
+   }
+
+   
+.searchBar input {
+        
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+   
+    width: 70vw;
+   
+    }
+
+    .searchBar {
+        height: 40vh;
+        width: 85vw;
+    }
+
+    
+.base {
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.base li {
+    padding: 5px 10px;
+    
+}
+
+.base li a {   
+    font-size: 0.6rem;
+    }
+
+    
+.result {
+    text-align: center;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    background-color: #393939;
+    border: 2px #CECBC2 solid;
+    border-radius: 5px;
+}
+
+.result:nth-last-of-type(odd) {
+    background-color: #49473B;
+    color: #CECBC2;
+}
+
+.result img {
+    width: 70px;
+    height: 140px;
+}
+
+.result {
+    color: #B5B7AA;
+}
+
+.result h5, .result h6 {
+    font-size: 1.2rem;
+    width: 240px;
+    color: #fff
+   
+}
+
+.result .btn-imdb  {
+    border: 1px solid black;
+    background-color: #9A8B6C;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    }
+
+    .result .btn-imdb a {
+    color: white;
+    font-size: 0.8rem;
+    }
 }

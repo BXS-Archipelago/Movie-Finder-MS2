@@ -46,11 +46,11 @@ body {
 .logo-title-strong {    
     font-family: "Righteous", sans-serif;
     letter-spacing: 2px;
-    color: #000;
+    color: #fff;
     line-height: 0.75;   
     font-size: 2.5rem;
     padding-left: 50px;
-    color: #CECBC2;
+    color: fff;
     text-shadow: 1px 3px 3px #B56B50;
 }
 /*--------------------------------Nav Bar*/
@@ -104,7 +104,7 @@ nav {
 .nav-wrapper ul li a {
     text-decoration: none;
     list-style: none;
-    color: #CECBC2;   
+    color: #fff;   
     font-family: "Righteous", sans-serif;
     font-size: 1.25rem;
     font-weight: bold;
@@ -521,6 +521,10 @@ button[type="submit"] {
     box-shadow: 0 0 30px black;
 }
 
+.searchBar .search-span {
+    text-align: center;
+    padding-bottom: 10px;
+}
 
 .searchBar h3 {
      text-transform: uppercase;
@@ -720,7 +724,9 @@ button:hover {
 .nav-wrapper ul li:last-child{
     margin-right: 0;
     }
-
+    .search-span {
+        font-size: .75rem;
+}
 
     .btn-holder {
         display: flex;

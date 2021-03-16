@@ -74,7 +74,7 @@ nav {
 
 
 .nav-wrapper ul li a:hover{
-    color: #252525; 
+    color: #B56B50; 
     opacity: 0.7;
     transition: 1s;
     text-shadow: 4px 4px 8px #26272b; ;
@@ -372,17 +372,18 @@ button[type="submit"] {
 
 /* ------ Watchlist Page ------------*/
 
-.watchlist-container {
+.watch-list {
     width: 80%;
     height: auto;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.watch-list {
-    width:60%;
+.watch-list h5 {
+   padding: 5px;
 }
 
 .watch-list .watch-title {
@@ -454,7 +455,11 @@ button[type="submit"] {
     letter-spacing: 1.5px;
     width: 30vw;
 }
-
+.save-btn {
+        margin-top: 20px;
+        padding: 4px 20px;
+        font-size: 1rem;
+            }
 
 
 /*-----Footer Area ---*/
@@ -759,6 +764,7 @@ button:hover {
     }
 
     .save-btn {
+        margin-top: 20px;
         padding: 0px 10px;
         font-size: 1rem;
             }

@@ -1,9 +1,9 @@
-let movieList = JSON.parse(localStorage.getItem("movielist")) || {};
+let movieList = JSON.parse(window.localStorage.getItem("movieList"));
 console.log(movieList);
 let currentMovie = ""
 
 if (movieList === null) {
-    window.localStorage.setItem("movieList", JSON.stringify({movielist}));
+    window.localStorage.setItem("movieList", JSON.stringify());
 }
 
 const movieInput = document.querySelector(".movies-input");

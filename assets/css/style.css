@@ -813,9 +813,7 @@ button:hover {
         width: 85vw;
     }
 
-    .contact-form h3 {
-        font-size: 1.2rem;
-    }
+   
     
 .base {
     padding: 5px;
@@ -889,15 +887,12 @@ button:hover {
         font-size: 1rem;
     }
 
-    
-
-
-
-    
+        
 .contact-form {
     width: 85vw;
-    max-height: 50vh;
+    max-height: 65vh;
     margin: 0;
+    padding-top: 20px;
 }
 
 .center-form {
@@ -908,7 +903,7 @@ button:hover {
     padding: 0px;
     margin: 0 0;
     height: 40vh;
-    width: 80%;
+    width: 100%;
 }
 
 button[type="submit"] {
@@ -921,14 +916,34 @@ button[type="submit"] {
     font-size: 0.7rem;
 }
 
+.outerform {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.outerform span {
+    font-size: .75rem
+}
+
+.outerform2 {
+    height: 15vh;
+}
+
+.outerform2 span {
+    font-size: .75rem;
+}
+ 
 .form-control {
     width: 60vw;
-    height: 55px;
-    margin: 10px 0;
-    font-size: 14px;
+    height: 25px;
+    margin: 5px 0;
+    font-size: 0.5rem;
     font-family: "Righteous";
     letter-spacing: 1px;
-    padding: 4px;
+    padding: 0px;
+  
 }
 
 .free-text {
@@ -937,7 +952,8 @@ button[type="submit"] {
     font-size: 0.5rem;
     font-family: "Righteous";
     letter-spacing: 1px;
-    padding: 4px;
+    padding: 0px;
+    margin-top: 5px;
 }
 
 .btn-contact {
@@ -948,7 +964,7 @@ button[type="submit"] {
 .contact_1 {
     text-transform: uppercase;
     color: #C8C9C3;
-    font-size: 4vh;
+    font-size: 2.5vh;
     font-weight: 700;
     text-shadow: 2px 5px 5px #7c432e;
 }
@@ -956,9 +972,9 @@ button[type="submit"] {
 .contact_2 {
     text-transform: uppercase;
     color: #C8C9C3;
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-weight: 700;
     text-shadow: 5px 5px 5px #7c432e;
-
+    margin-bottom: 5px;
 }
     }

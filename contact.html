@@ -73,9 +73,9 @@
                     <h5 class="contact_2">we welcome your requests</h5>  
 
         <form onsubmit="return sendMail(this);" id = "contactForm" class = "center-form">
-        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-        <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-        <textarea rows="5" name="requestsummary" class="form-control free-text" id="projectsummary" placeholder="Your requests.." required></textarea>
+        <div class= "outerform"><span>name</span><input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/></div>
+        <div class= "outerform"><span>email</span><input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/></div>
+        <div class= "outerform2"><span>message</span><textarea rows="5" name="requestsummary" class="form-control free-text" id="projectsummary" placeholder="Your requests.." required></textarea></div>
         <button type="submit" class="btn btn-secondary btn-contact">Send</button>
         </form>
 

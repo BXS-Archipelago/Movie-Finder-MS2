@@ -300,6 +300,12 @@ nav {
     justify-content: center;
     }
 
+
+    .viewed-movie {
+        text-decoration: line-through;
+    }
+
+
 /*----------------------------contact-Form--*/
     
 .contact-form {

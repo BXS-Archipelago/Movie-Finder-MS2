@@ -51,7 +51,7 @@ body {
     line-height: 0.75;   
     font-size: 2.5rem;
     padding-left: 50px;
-    color: fff;
+    color: #fff;
       text-shadow: 1px 1px 2px grey, 0 0 1em black, 0 0 0.1em black;
 }
 /*--------------------------------Nav Bar*/
@@ -530,7 +530,7 @@ button[type="submit"] {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    backdrop-filter:(10px);
+    
 }
 
 .jumbotron {

@@ -908,8 +908,10 @@ button:hover {
     .nav-wrapper ul li a {
         font-size: 1rem;
     }
-
-        
+    .watch-list {
+        padding: 15px 10px;
+    }
+    
 .contact-form {
     width: 85vw;
     max-height: 70vh;

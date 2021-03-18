@@ -88,26 +88,23 @@ Font Awesome : Icons were used in the Wishlist page.
         Button-Hover & search result text: #CECBC2 - a light cream-grey shade
         Search result alternating background : #49473B - dark grey-green shade
 
+Font Choice : "Righteous" is the style of font imported from Google fonts. This is a clean font, with a slightly vintage feel but also modern
+
+Google Fonts :  The CSS imports the "Righteous" font family from Google Fonts. The secondary choice of font for fall-back situations is Sans Serif. 
+
+
+
+
 
 # TESTING
 
 Continuous testing will be logged in this section: 
 
-First Bug found - Dropdown menu from burger icon when screen is less than 993px requires two clicks.  Issue #2 - I had originally created a second mobile-only set of navigation list items which were display: none in desktop view.  I was using Javascript block to either change the opacity or display:Flex toggle  in the following block: 
-let showMenu = document.querySelector(".nav-links2")
-const barsFunction = () => {
-   if (showMenu.style.opacity === "0")
-   {
-      showMenu.style.opacity = "1"
-} else {
-     showMenu.style.opacity = "0"
-}
-}
+Navigation links are css controlled.  The responsive drop-down menu is based on a burger made of three lines, with an animation to convert them in to an X for closing. I wanted to complete this in line with the mock-up design. 
 
-However, the - nav-links2 a - is still clickable on the mobile pages when the drop down menu is not in use, thus making large clickable areas in my screen. Very frustrating, and I'm sure there is a way around it but I have instead reverted back to my CSS-only responsive menu, which is far more attractive anyway. Due to the unforeseen bug, this change will be updated in the mock-ups. 
+#### Feasibilty test complete: Index.html page and CSS created and designed according to Wireframe Mockup. Wireframe file MOVIE FINDERS MS2 WF.pdf uploaded. 
 
-Feasibilty test complete: Index.html page and CSS created and designed according to Wireframe Mockup. Wireframe file MOVIE FINDERS MS2 WF.pdf uploaded. 
-
+The site objective will appear on the landing page. This is a movie search API using IMDb.com as a resource for the search results. This requires setting up an account and accessing the API options and documentation pages on IMDb.
 
 IMDB account set up and the key for the API permission has been received : "k_x3bnm044"
 
@@ -140,18 +137,19 @@ Using the search term "JAWS" as the movie, Console.log(data) for the object give
     },
 
 
-    The search objective for this site is to retrieve the following: 
+    The search objective for my site is to retrieve the following: 
         - image
         - title
         - description
         - id 
 
+    These will be displayed in a cell and the results page will display a grid of results  either double or single column, for desktop or mobile respectively.
+
     The click event of the search button means this data will be fetched with the json function. A forEach loop will iterate each value to the innerHTML of the div that will automatically create within the "results-container" div stored in the index.html page.  
 
     Using variable let title = jaws
-    First attempts unsuccessful as the empty array was mistakenly to "results.data" as per the format in the json object.  The fix is obvious now, it has been changed to "data.results" (with a cup of tea and biscuits to keep sane!!)
-
-    Succesful API connection. 
+    First attempts unsuccessful as the empty array was mistakenly to "results.data" as per the format in the json object.  The fix is obvious now, it has been changed to "data.results".
+    Succesful API connection now. 
     
     The initial test offers to the console {searchType: "Movie", expression: "jaws", results: Array(8), errorMessage: ""}
 
@@ -169,11 +167,44 @@ Using the search term "JAWS" as the movie, Console.log(data) for the object give
 
     Watchlist - Requirement : input field, save button, output required to have option to put a line-through for completed tasks and option to delete from list. 
 
-
-    Watchlist Bug??!! For items created in the watchlist, I have a tick-complete icon and a delete icon. I am finding it very difficult to attach the click event so that each serves its purpose individually! 
-
-    Test : I included onclick events for both font-awesome icons in the elements as I couldn't target them using querySelector or getElementsbyId, etc.  Will need further tests and probably tutor support. I also need figure out how to save this to Local Storage in the browser!  (I will set the contact page first and return to this after due to lateness and brain-malfunction!)
+    Watchlist bug: For items created in the watchlist, I have a tick-complete icon and a delete icon. I am finding it very difficult to attach the click event so that each serves its purpose individually.     Test : I included onclick events for both font-awesome icons in the elements as I couldn't target them using querySelector or getElementsbyId, etc.  Will need further tests and probably tutor support. I also need figure out how to save this to Local Storage in the browser!  (I will set the contact page first and return to this after due to lateness and brain-malfunction!)
 
     Contact Form Testing : EmailJS service key and template number created and applied in local contact.js.  The online template test at EmailJS works fine and is sending to my inbox. However, several attempts from the gitpod site have not been succesful. All form data looks correct. 
 
     Contact-Form Fix. Deleted the contents of the template and recreated it as per the form required. All working succesfully and emails from webpage received accordingly.
+
+    Known issue: on the Watchlist page, the list renders successfully. The list is saved to local storage and then retrieved successfully. The list items are deleted without problem using the font-awesome X icon. The tick icon also functions correctly for the line-through, both to select and de-select the line.  The only issue is that the line-through does not save & retrieve in local storage. I contacted Code Institute support for troubleshooting this objective but this communication was unsuccessful. I will continue to investigate the issue separately, as I have a good idea what to do but at this point, I was unable to achieve the full functionality. 
+
+
+    Functionality Testing: 
+    
+        ## Navigation bar tested for positioning in desktop, tablet and mobile size, and works fine.
+
+        ## Navigation links all work correctly on each page. 
+
+        ## Footer positioning : Footer remains at the bottom of the page. I chose sticky Footer because the results of the search pages can require some scrolling and it would put large distance between the footer and header otherwise. 
+
+        ## All links work in the Footer.  Copyright added to footer. 
+
+        ## Hamburger menu works in both Tablet and Mobile Phone display. 
+
+        ## Drop Down links all function correctly in mobile view. 
+
+        ## All links generated from Search Results open in a separate page/tab, allowing the user to easily return to the site. 
+
+        ## Watchlist saves information entered by user to local storage and opens it when the page is revisited. 
+
+        ## Watchlist lines delete upon click of X icon from Local Storage
+
+        ## Contact page interacts successfully with Email JS.  Emails are sent to my own inbox from the website. 
+
+        ## Movie Search operation displays results successfully in the lower panel of the search page.  Movie poster displays where available from IMDb.
+
+        ## Title and description of movies display.  
+
+        ## The button linking to IMDb by Movie ID works and opens in a separate page as desired. 
+
+        ## Top 50 page buttons work and display grids operate for either Movie API or TV Shows API. 
+
+
+

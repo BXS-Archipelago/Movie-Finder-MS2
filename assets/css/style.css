@@ -337,7 +337,7 @@ button[type="submit"] {
     height: 55px;
     margin: 10px 0;
     font-size: 14px;
-    font-family: "Righteous";
+    font-family: "Righteous", sans-serif;
     letter-spacing: 1px;
     padding: 4px;
 }
@@ -346,7 +346,7 @@ button[type="submit"] {
     width: 60vw;
     height: 300px;
     font-size: 14px;
-    font-family: "Righteous";
+    font-family: "Righteous", sans-serif;
     letter-spacing: 1px;
     padding: 4px;
 }
@@ -406,7 +406,7 @@ button[type="submit"] {
     font-weight: bold;  
     border: #3b3b3b;
     border-radius: 10px;
-    font-family: "Righteous";
+    font-family: "Righteous", sans-serif;
     letter-spacing: 1.5px;
     width: 40vw;
 }
@@ -452,7 +452,7 @@ button[type="submit"] {
     padding: 15px;
     border: #3b3b3b;
     border-radius: 10px;
-    font-family: "Righteous";
+    font-family: "Righteous", sans-serif;
     letter-spacing: 1.5px;
     width: 30vw;
 }
@@ -473,6 +473,7 @@ button[type="submit"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding-bottom: 20px;
     background-color: #393939;
     padding: 5px;
@@ -482,7 +483,7 @@ button[type="submit"] {
 
 .base li {
     list-style: none;
-    padding: 20px 20px;
+    padding: 5px 20px;
     display: inline-block;
     
 }
@@ -495,8 +496,11 @@ button[type="submit"] {
     text-shadow: 1px 1px 2px grey, 0 0 1em black, 0 0 0.1em black;
    }
 
-
-
+   .copy-holder {
+       color: orangered;
+       float: right;
+       font-size: 2vh;
+   }
 
 
 
@@ -553,7 +557,7 @@ button[type="submit"] {
     margin: 15px;
     border: #3b3b3b;
     border-radius: 10px;
-    font-family: "Righteous";
+    font-family: "Righteous", sans-serif;
     letter-spacing: 1.5px;
     width: 40vw;
     box-shadow: 0 0 14px black;
@@ -562,7 +566,7 @@ button[type="submit"] {
 button {
     font-size: 20px;
     padding: 5px 55px;
-    font-family:"Righteous";
+    font-family:"Righteous", sans-serif;
     text-transform: uppercase;
     background-color: #B56B50;
     border-radius: 4px;
@@ -838,12 +842,16 @@ button:hover {
 }
 
 .base {
-    padding: 5px;
+   
     margin-top: 20px;
 }
 
+.base ul {
+    margin-bottom: 0;
+}
+
 .base li {
-    padding: 5px 10px;
+    padding: 5px 5px;
     
 }
 
@@ -851,7 +859,10 @@ button:hover {
     font-size: 0.6rem;
     }
 
-    
+.copy-holder {
+    font-size: 1.5vh;
+    margin-bottom: 20px;
+   }
 .result-container2 {
    
     padding: 20px 0 50px 0;
@@ -964,7 +975,7 @@ button[type="submit"] {
     height: 25px;
     margin: 5px 0;
     font-size: 0.5rem;
-    font-family: "Righteous";
+    font-family: "Righteous", sans-serif;
     letter-spacing: 1px;
     padding: 0px;
   
@@ -974,7 +985,7 @@ button[type="submit"] {
     width: 60vw;
     height: 300px;
     font-size: 0.5rem;
-    font-family: "Righteous";
+    font-family: "Righteous", sans-serif;
     letter-spacing: 1px;
     padding: 0px;
     margin-top: 5px;

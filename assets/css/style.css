@@ -26,6 +26,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #393939;   
+   
 }
 
 
@@ -51,7 +52,7 @@ body {
     font-size: 2.5rem;
     padding-left: 50px;
     color: fff;
-    text-shadow: 1px 3px 3px #B56B50;
+      text-shadow: 1px 1px 2px grey, 0 0 1em black, 0 0 0.1em black;
 }
 /*--------------------------------Nav Bar*/
 .links-container {
@@ -109,7 +110,7 @@ nav {
     font-size: 1.25rem;
     font-weight: bold;
     letter-spacing: 2.5px;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 1px 3px black;
 }
 
 
@@ -360,7 +361,7 @@ button[type="submit"] {
     color: #C8C9C3;
     font-size: 4vh;
     font-weight: 700;
-    text-shadow: 2px 5px 5px #7c432e;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em rgb(141, 41, 4)
 }
 
 .contact_2 {
@@ -368,9 +369,8 @@ button[type="submit"] {
     color: #C8C9C3;
     font-size: 2vh;
     font-weight: 700;
-    text-shadow: 5px 5px 5px #7c432e;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em rgb(141, 41, 4)
 }
-
 /* ------ Watchlist Page ------------*/
 
 .watch-list {
@@ -392,7 +392,7 @@ button[type="submit"] {
     color: #C8C9C3;
     font-size: 4vh;
     font-weight: 700;
-    text-shadow: 2px 5px 5px #7c432e;
+    text-shadow: 1px 1px 2px grey, 0 0 1em black, 0 0 0.1em black;
 }
 
 .watch-list input {   
@@ -477,6 +477,7 @@ button[type="submit"] {
     background-color: #393939;
     padding: 5px;
     margin-top: 50px;
+    box-shadow: inset 0em .5em 1em #6D6F5B;
 }
 
 .base li {
@@ -489,8 +490,9 @@ button[type="submit"] {
 .base li a {
     text-decoration: none;
     list-style: none;
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #fff;
+    text-shadow: 1px 1px 2px grey, 0 0 1em black, 0 0 0.1em black;
    }
 
 
@@ -537,7 +539,7 @@ button[type="submit"] {
     color: #C8C9C3;
     font-size: 4vh;
     font-weight: 700;
-    text-shadow: 2px 5px 5px #7c432e;
+    text-shadow: 1px 1px 2px grey, 0 0 1em black, 0 0 0.1em black;
     padding-bottom: 10px;
 }
 
@@ -929,15 +931,15 @@ button:hover {
 button[type="submit"] {
    width: 15vw;
     margin-top:0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     background-color: #B56B50;
     color: #d0cdc6;
-    padding: 5px;
+
     font-size: 0.7rem;
 }
 
 .outerform {
-    height: 10vh;
+    height: 8vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -948,7 +950,7 @@ button[type="submit"] {
 }
 
 .outerform2 {
-    height: 15vh;
+    height: 18vh;
 }
 
 .outerform2 span {
@@ -986,7 +988,7 @@ button[type="submit"] {
     color: #C8C9C3;
     font-size: 2.5vh;
     font-weight: 700;
-    text-shadow: 2px 5px 5px #7c432e;
+    text-shadow: 1px 1px 2px grey, 0 0 1em black, 0 0 0.1em black;
 }
 
 .contact_2 {
@@ -994,7 +996,7 @@ button[type="submit"] {
     color: #C8C9C3;
     font-size: 1.8vh;
     font-weight: 700;
-    text-shadow: 5px 5px 5px #7c432e;
+   text-shadow: 1px 1px 2px grey, 0 0 1em black, 0 0 0.1em black;
     margin-bottom: 5px;
 }
     }

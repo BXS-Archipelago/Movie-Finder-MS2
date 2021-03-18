@@ -27,6 +27,12 @@ As a visitor to the site, I want an immediately accessible search function on ei
 > 
 
 
+## Wireframe Mock-Up created with Balsamiq.  
+This document is saved in the Assets folder or at the following link:
+
+[MOVIE FINDER MS2 WF.pdf](https://github.com/BXS-Archipelago/Movie-Finder-MS2/files/6167224/MOVIE.FINDER.MS2.WF.pdf)
+
+
 ## Site Features
 
 ## Header
@@ -219,6 +225,62 @@ Functionality Testing:
 - Top 50 page buttons work and display grids operate for either Movie API or TV Shows API. 
 
 
+Device Testing:  
+Widescreen Desktop on Dell 24" Monitor. 
+Laptop Screen Dell XPS 15" 
+Samsung Galaxy 10.4" Tablet
+Huawei 6.4" Mobile Phone
+Apple iPhone 4.7" Mobile Phone. 
+
+Human testing:  The site was tested by three other people to check functionality without issues. 
+
+
 ## Validation
 
-![] (images/w3validatorcss.gif)
+### HTML 
+### CSS
+
+![w3validatorcss](https://user-images.githubusercontent.com/71372294/111697684-c716d400-882d-11eb-810f-e224146e6ac2.gif)
+
+
+HTML (all pages) and CSS pass the W3C Validation successfully.
+
+
+## Catchpoint Webpage Testing : 
+
+Overall test results can be found here. The resource used is Catchpoint's facility on www.webpagetest.org
+
+Index Page : https://www.webpagetest.org/result/210318_XiBQ_4aa9cfc7b5a73384b5a9338c80414028/
+Top 50 page : https://www.webpagetest.org/result/210318_XiCR_bf8f591a0a3e1100ace985fb31e3cc67/
+Watchlist page : https://www.webpagetest.org/result/210318_XiG8_db33dc97427b1d2e1f6739b6e635111b/
+Contact page: https://www.webpagetest.org/result/210318_XiDJ_cf15b1e4b6b36e1ba26d9ffaf33466cb/
+
+## Deployment:
+
+The site is currently published on Github at  https://bxs-archipelago.github.io/Movie-Finder-MS2/
+
+### Cloning and Forking
+
+Cloning is welcomed and I would love feedback. To clone the page, please use the Github facility at the Repository. You will find 'Clone or Download' green button and follow the instructions. 
+
+Forking can also be done on Github. Please use the Fork option in order to not make any modifications to the main branch of the repository. Enjoy playing with the site, but please remember to us "New Pull Request" when you have finished. 
+
+ 
+ # Credits
+
+Image:
+
+Cinematographer's Room by Photographer Noom Peerapong from Unsplash.com :
+https://unsplash.com/photos/2uwFEAGUm6E
+
+My responsive Navigation bar is one I have been using since last year. Its from a Youtube Tutorial by Tech2 etc.  It can be found at this link: 
+https://youtu.be/baFqcVUMUg0
+
+Offline, I have been using the following book as supplementary learning: 
+JavaScript and JQuery: Interactive Front–End Web Development 
+By Jon Duckett
+ASIN : 1118531647
+Publisher : Wiley; 1st edition (18 July 2014)
+
+Credit and Thanks to Code Institute Institute Mentor Mr Maranatha Ilesammi for guidance and trouble-shooting expertise. 
+Also credit to my own mentor, Mr Ratan Sharma for clarifying the lessons and explaining some Javascript concepts with great clarity. 

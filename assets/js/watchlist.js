@@ -1,10 +1,7 @@
 let movieList = JSON.parse(window.localStorage.getItem("movieList"))|| []
 console.log(movieList);
 let currentMovie = ""
-/* 
-if (movieList === null) {
-    window.localStorage.setItem("movieList", JSON.stringify());
-} */
+
 
 const movieInput = document.querySelector(".movies-input");
 const saveBtn = document.querySelector(".save-btn");
@@ -15,8 +12,7 @@ const done = document.querySelector(".tick-linethrough");
 
 const listRendering = () => {
     ul.innerHTML = ""
-   /*  let movieList = JSON.parse(window.localStorage.getItem("movieList")); */
-    movieList.forEach(movie => {
+      movieList.forEach(movie => {
         const li = document.createElement("li");
 
 
@@ -52,8 +48,7 @@ saveBtn.addEventListener("click", (e) => {
 })
 
 function handleDelete(e, title) {
-   /*  movieList.splice(movieList.indexOf(item), 1) */
-   movieList = movieList.filter((movie) => movie.title !== title);
+    movieList = movieList.filter((movie) => movie.title !== title);
     window.localStorage.setItem("movieList", JSON.stringify(movieList))
     console.log(movieList, window.localStorage)
     listRendering()   
@@ -61,9 +56,6 @@ function handleDelete(e, title) {
 }
 
 function handleViewedClick(e, title) {
-
-   /*  const selectedMovie = movieList.filter((movie) => movie.title === title)[0];
-     const remainingMovies = movieList.filter((movie) => movie.title !== title); */
       const remainingMovies = movieList.map((movie) => {
           if (movie.title === title) {
                movie.viewed = !movie.viewed;
@@ -72,20 +64,11 @@ function handleViewedClick(e, title) {
           return movie
       });
     console.log(remainingMovies)
-   /*  if (selectedMovie) {
-        selectedMovie.viewed = !selectedMovie.viewed;
-        movieList = [...remainingMovies, selectedMovie];
-         window.localStorage.setItem("movieList", JSON.stringify(movieList))
-         listRendering()
-    }
-     */
-    window.localStorage.setItem("movieList", JSON.stringify(remainingMovies))
-   listRendering()
-    console.log(movieList, window.localStorage)
   
 
-   /*  currentElement.parentNode.previousElementSibling.style.textDecoration = (currentElement.parentNode.previousElementSibling.style.textDecoration === "line-through") ? ("none") : ("line-through")
-    currentElement.firstElementChild.className = (currentElement.firstElementChild.className === "far fa-check-circle") ? ("fas fa-check-circle") : ("far fa-check-circle")
- */
+    window.localStorage.setItem("movieList", JSON.stringify(remainingMovies))
+   listRendering()
+    console.log(movieList, window.localStorage)  
+
 }
-// -------------------
+

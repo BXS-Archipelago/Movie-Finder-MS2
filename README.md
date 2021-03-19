@@ -37,13 +37,13 @@ This document is saved in the Assets folder or at the following link:
 
 ## Header
 
->The uppermost section of the page will contain the logo to the left. This will be text-based and subtle to cause minimal distraction.  
+The uppermost section of the page will contain the logo to the left. This will be text-based and subtle to cause minimal distraction.  
 
->The top right of the page will contain four navigation links for the overall site content. 
+The top right of the page will contain four navigation links for the overall site content. 
 
->The body of the page will contain two parts. The top section containing the input fields, and the bottom section to hold any output from the movie choices or for the Wishlist contents. 
+The body of the page will contain two parts. The top section containing the input fields, and the bottom section to hold any output from the movie choices or for the Wishlist contents. 
 
->In mobile view, the navigation links become activated by a hamburger bar icon with the navigation links offered as full width bars to easily click on. 
+In mobile view, the navigation links become activated by a hamburger bar icon with the navigation links offered as full width bars to easily click on. 
 
 
 ## Landing page

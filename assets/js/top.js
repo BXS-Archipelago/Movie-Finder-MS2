@@ -64,7 +64,5 @@ $("#top-tv").click(()=> {
             `
             document.querySelector(".result-container2").appendChild(div)
             })
-
-      })       
-     
+      })
 )})  

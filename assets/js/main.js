@@ -1,17 +1,4 @@
 
-/* // Responsive menu design feature - This contained a bug, as per Readme Testing update: 
-
-let showMenu = document.querySelector(".nav-links2")
-  
-const barsFunction = () => {
-   if (showMenu.style.opacity === "0")
-   {
-      showMenu.style.opacity = "1"
-} else {
-     showMenu.style.opacity = "0"
-}
-}
- */
 
 // -----------------------------API for IMDB ---//
 
@@ -29,6 +16,7 @@ $("#searchMovies").change(e => title = e.target.value)
 
 // on click, retrieve data from IMDB, then as promise, json data back 
 // to be entered into result array. 
+
 $(".submit button").click(()=> {
    result.innerHTML = ""
    fetch (`https://imdb-api.com/en/API/SearchMovie/${key}/${title}`)
@@ -54,9 +42,6 @@ $(".submit button").click(()=> {
 
          result.appendChild(div)
       }) 
-      
-    
+   
     })       
-     
-
 )})

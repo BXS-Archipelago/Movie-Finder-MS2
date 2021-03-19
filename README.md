@@ -198,7 +198,7 @@ Google Fonts :  The CSS imports the "Righteous" font family from Google Fonts. T
     Contact-Form Fix. Deleted the contents of the template and recreated it as per the form required. All working succesfully and emails from webpage received accordingly.
 
     
-Functionality Testing: 
+## Functionality Testing: 
 
 - Navigation bar tested for positioning in desktop, tablet and mobile size, and works fine.
 
@@ -228,6 +228,10 @@ Functionality Testing:
 
 - Top 50 page buttons work and display grids operate for either Movie API or TV Shows API. 
 
+## Known Bugs: 
+
+Through many trials and tests of the pages, there are no known bugs upon completion. 
+
 
 Device Testing:  
 Widescreen Desktop on Dell 24" Monitor. 
@@ -238,6 +242,13 @@ Apple iPhone 4.7" Mobile Phone.
 
 Human testing:  The site was tested by three other people to check functionality without issues. 
 
+### Online testing : https://responsivedesignchecker.com/
+
+Desktop 10" to 24" desktop test: Passed
+Tablet devices : 9 screen sizes ranging from 600 x 960 up to 1366 x 1024
+Mobile phones: 10 devices of various sizes. 
+
+All available screen sizes show no fault in display responsiveness. 
 
 ## Validation
 
@@ -259,6 +270,16 @@ Top 50 page : https://www.webpagetest.org/result/210318_XiCR_bf8f591a0a3e1100ace
 Watchlist page : https://www.webpagetest.org/result/210318_XiG8_db33dc97427b1d2e1f6739b6e635111b/
 Contact page: https://www.webpagetest.org/result/210318_XiDJ_cf15b1e4b6b36e1ba26d9ffaf33466cb/
 
+
+
+
+## Known Bugs: 
+
+Through many trials and tests of the pages, there are no known bugs upon completion. 
+
+
+
+
 ## Deployment:
 
 The site is currently published on Github at  https://bxs-archipelago.github.io/Movie-Finder-MS2/
@@ -277,7 +298,7 @@ Image:
 Cinematographer's Room by Photographer Noom Peerapong from Unsplash.com :
 https://unsplash.com/photos/2uwFEAGUm6E
 
-My responsive Navigation bar is one I have been using since last year. Its from a Youtube Tutorial by Tech2 etc.  It can be found at this link: 
+My responsive Navigation bar is one I have been using since last year. Its from a Youtube Tutorial by Youtuber "Tech2 etc".  It can be found at this link: 
 https://youtu.be/baFqcVUMUg0
 
 Offline, I have been using the following book as supplementary learning: 
@@ -287,4 +308,4 @@ ASIN : 1118531647
 Publisher : Wiley; 1st edition (18 July 2014)
 
 Credit and Thanks to Code Institute Institute Mentor Mr Maranatha Ilesammi for guidance and trouble-shooting expertise. 
-Also credit to my own mentor, Mr Ratan Sharma for clarifying the lessons and explaining some Javascript concepts with great clarity. 
+Also credit to my own mentor, Mr Ratan Sharma for clarifying objectives and explaining some Javascript concepts that I had perceived incorrectly. 

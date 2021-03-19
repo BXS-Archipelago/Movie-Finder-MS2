@@ -1,6 +1,6 @@
-let movieList = JSON.parse(window.localStorage.getItem("movieList"))|| []
+let movieList = JSON.parse(window.localStorage.getItem("movieList"))|| [];
 console.log(movieList);
-let currentMovie = ""
+let currentMovie = "";
 
 
 const movieInput = document.querySelector(".movies-input");
@@ -11,7 +11,7 @@ const done = document.querySelector(".tick-linethrough");
 
 
 const listRendering = () => {
-    ul.innerHTML = ""
+    ul.innerHTML = "";
       movieList.forEach(movie => {
         const li = document.createElement("li");
 
@@ -19,10 +19,10 @@ const listRendering = () => {
         li.innerHTML = `
             <h3 class="element ${movie.viewed && 'viewed-movie'}">${movie.title} </h3>
             <div class = "box"><span onclick= "handleDelete(this, '${movie.title}')" class = "cross"><i class="far fa-times-circle"></i></span> <span onclick= "handleViewedClick(this, '${movie.title}')" class = "tick"><i class="far fa-check-circle"></i> </span> </div>
-        `
+        `;
         ul.appendChild(li);
-    })
-}
+    });
+};
 
 listRendering();
 
@@ -30,28 +30,28 @@ listRendering();
 movieInput.addEventListener("change", (e) => {
     e.preventDefault();
     console.log(currentMovie);
-    currentMovie = e.target.value
+    currentMovie = e.target.value;
     console.log(currentMovie);
-})
+});
 
 
 
 saveBtn.addEventListener("click", (e) => {
-    e.preventDefault()
+    e.preventDefault();
     movieList.push({
         title: currentMovie,
         viewed: false
-    })
-    window.localStorage.setItem("movieList", JSON.stringify(movieList))
-    console.log(window.localStorage)
-    listRendering()
+    });
+    window.localStorage.setItem("movieList", JSON.stringify(movieList));
+    console.log(window.localStorage);
+    listRendering();
 })
 
 function handleDelete(e, title) {
     movieList = movieList.filter((movie) => movie.title !== title);
-    window.localStorage.setItem("movieList", JSON.stringify(movieList))
-    console.log(movieList, window.localStorage)
-    listRendering()   
+    window.localStorage.setItem("movieList", JSON.stringify(movieList));
+    console.log(movieList, window.localStorage);
+    listRendering();   
 
 }
 
@@ -61,14 +61,14 @@ function handleViewedClick(e, title) {
                movie.viewed = !movie.viewed;
           }
 
-          return movie
+          return movie;
       });
-    console.log(remainingMovies)
+    console.log(remainingMovies);
   
 
-    window.localStorage.setItem("movieList", JSON.stringify(remainingMovies))
-   listRendering()
-    console.log(movieList, window.localStorage)  
+    window.localStorage.setItem("movieList", JSON.stringify(remainingMovies));
+    listRendering();
+    console.log(movieList, window.localStorage)  ;
 
 }
 

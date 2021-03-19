@@ -260,6 +260,9 @@ All available screen sizes show no fault in display responsiveness.
 
 HTML (all pages) and CSS pass the W3C Validation successfully.
 
+Javascript Validation:  https://beautifytools.com/javascript-validator.php 
+
+This site was used to identify issues and fix missing semicolons, etc. 
 
 ## Catchpoint Webpage Testing : 
 
@@ -276,8 +279,6 @@ Contact page: https://www.webpagetest.org/result/210318_XiDJ_cf15b1e4b6b36e1ba26
 ## Known Bugs: 
 
 Through many trials and tests of the pages, there are no known bugs upon completion. 
-
-
 
 
 ## Deployment:

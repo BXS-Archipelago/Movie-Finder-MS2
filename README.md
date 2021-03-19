@@ -109,11 +109,15 @@ Google Fonts :  The CSS imports the "Righteous" font family from Google Fonts. T
 
 > Continuous testing will be logged in this section: 
 
+## Global Features
+
 > Navigation links are css controlled.  The responsive drop-down menu is based on a burger made of three lines, with an animation to convert them in to an X for closing. I wanted to complete this in line with the mock-up design. 
 
->  #### Feasibilty test complete: Index.html page and CSS created and designed according to Wireframe Mockup. Wireframe file MOVIE FINDERS MS2 WF.pdf uploaded. 
+> Footer consists of the four navigation links. Because the search functions of the two first pages will generate several rows of results, the footer is fixed to remain visible always. Otherwise the header navigation will require a lot of scrolling to reach again, expecially in small devices. 
 
-> The site objective will appear on the landing page. This is a movie search API using IMDb.com as a resource for the search results. This requires setting up an account and accessing the API options and documentation pages on IMDb.
+>  #### Feasibilty test complete: Index.html page and CSS created and designed according to Wireframe Mockup. 
+
+> The site objective (movie search) will appear on the landing page. This is a movie search API using IMDb.com as a resource for the search results. This requires setting up an account and accessing the API options and documentation pages on IMDb.
 
 > IMDB account set up and the key for the API permission has been received : "k_x3bnm044"
 
@@ -153,7 +157,7 @@ Google Fonts :  The CSS imports the "Righteous" font family from Google Fonts. T
         - title
         - description
         - id 
-=
+
 
     These will be displayed in a cell and the results page will display a grid of results  either double or single column, for desktop or mobile respectively.
 
@@ -177,7 +181,7 @@ Google Fonts :  The CSS imports the "Righteous" font family from Google Fonts. T
 
     console.log(data) for movies and TV shows shows objects are produced in groups of 0-99, 100-199, 200-250.  This caused some additional thought as I presumed I needed to further access the first array index as sub-index in this format.  It turned out the items list doesn't require any different method of access. 
 
-## Watchlist - 
+## watchlist.html - 
 
 >My requirement : input field, save button, with the output required to have option to put a line-through for completed tasks, and also option to delete from list. 
 
